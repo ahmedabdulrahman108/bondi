@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+/* Start Global Section */
+:root {
+    --main-color: #0D4C92;
+    --second-color: #59C1BD;
+    --third-color: #EB6440;
+    --forth-color: #D6E4E5;
+    --fifth-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+main {
+    font-family: 'K2D', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-btn {
+    background-color: var(--third-color);
+    color: var(--forth-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+    color: var(--forth-color);
+}
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--second-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-title .puzzle {
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+/* End Global Section */
+/* Start Navbar Section */
+.navbar {
+    background-color: var(--main-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--second-color);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--second-color);
+}
+
+.navbar .search svg {
+    color: var(--second-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: var(--second-color);
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--second-color);
+}
+
+/* End Navbar Section */
+/* Start Landing Section  */
+.landing {
+    background-color: var(--main-color);
+    min-height: calc(100vh - 72px);
+}
+
+.landing .text {
+    font-size: 60px;
+}
+
+.landing p {
+    font-family: 'Grape Nuts', cursive;
+}
+
+/* End Landing Section */
+/* Start Feature Section */
+.feature .holder {
+    height: 200px;
+}
+
+.feature .holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature .holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.feature .holder .icon {
+    color: var(--main-color);
+}
+
+.feature .feat h4 {
+    color: var(--third-color);
+    font-weight: bold;
+}
+
+/* End Feature Section */
+
+/* Srart Our Work Section */
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul .active {
+    background-color: var(--third-color);
+    color: white;
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--third-color);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: #eb654079;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+
+/* End Our Work Section */
+/* Start About Us Section */
+.about-us .desc {
+    max-width: 500px;
+}
+
+.about-us a {
+    cursor: default;
+}
+
+/* End About Us Section */
+/* Start Team Section */
+.team {
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--third-color);
+}
+
+.team .box h4 {
+    background-color: var(--third-color);
+}
+
+/* End Team Section */
+/* Start Project Section */
+.project {
+    background-color: var(--main-color);
+}
+
+/* End Project Section */
+/* Start Subscribe Section */
+.subscribe {
+    background-color: var(--fifth-color);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+
+.subscribe ::placeholder {
+    color: white;
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* End Subscribe Section */
+/* Start Footer */
+footer {
+    background-color: var(--main-color);
+    font-weight: 500;
+}
+
+footer .copyright>span {
+    color: var(--fifth-color);
+}
+
+footer .copyright div span {
+    color: var(--second-color);
+}
+
+footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+footer .facebook {
+    background-color: #1877f2;
+}
+
+footer .twitter {
+    background-color: #1da1f2;
+}
+
+footer .linkedin {
+    background-color: #0077b5;
+}
+
+footer .youtube {
+    background-color: #ff0000;
+}
+
+footer .instagram {
+    background-color: #fcaf45;
+}
+
+/* End Footer */
